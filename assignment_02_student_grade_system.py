@@ -45,7 +45,6 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
-# Function to determine the student's grade
 def get_grade(score):
     if score < 0 or score > 100:
         return None
@@ -60,8 +59,6 @@ def get_grade(score):
     else:
         return "F"
 
-
-# Main function
 def main():
     score = int(input("Enter student score (0-100): "))
     grade = get_grade(score)
@@ -71,6 +68,4 @@ def main():
     else:
         print("Grade:", grade)
 
-
-# Run the program
 main()

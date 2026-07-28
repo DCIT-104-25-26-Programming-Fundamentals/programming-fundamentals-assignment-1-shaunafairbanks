@@ -50,8 +50,6 @@
 # =============================================================================
 
 
-
-# Part A - Print the first N Fibonacci numbers
 def print_fibonacci(n):
     if n <= 0:
         print("Error: N must be a positive integer.")
@@ -69,8 +67,6 @@ def print_fibonacci(n):
         second = next_num
     print()
 
-
-# Part B - Check if a number is a Fibonacci number
 def check_fibonacci(number):
     if number < 0:
         print(number, "is NOT a Fibonacci number.")
@@ -90,7 +86,6 @@ def check_fibonacci(number):
         print(number, "is NOT a Fibonacci number.")
 
 
-# Main function
 def main():
     n = int(input("How many terms? "))
     print_fibonacci(n)
@@ -98,6 +93,4 @@ def main():
     number = int(input("Enter a number to check: "))
     check_fibonacci(number)
 
-
-# Run the program
 main()

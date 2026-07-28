@@ -55,7 +55,7 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
-# Part A
+
 def single_table():
     number = int(input("Enter a number: "))
 
@@ -64,7 +64,7 @@ def single_table():
         print(f"{number} x {i} = {number * i}")
 
 
-# Part B
+
 def tables_to_n():
     n = int(input("\nEnter a positive integer (N): "))
 
@@ -79,11 +79,8 @@ def tables_to_n():
         print("---------------------------")
 
 
-# Main function
 def main():
     single_table()
     tables_to_n()
 
-
-# Run the program
 main()
