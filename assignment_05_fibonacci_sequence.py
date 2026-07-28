@@ -1,6 +1,6 @@
 # =============================================================================
 # PROGRAMMING FUNDAMENTALS — Assignment 5
-# Topic: Loops, Sequences, and Functions
+# Topic: Loops, Seaquences, and Functions
 # =============================================================================
 #
 # TASK: Fibonacci Sequence Generator
@@ -49,3 +49,55 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+
+
+# Part A - Print the first N Fibonacci numbers
+def print_fibonacci(n):
+    if n <= 0:
+        print("Error: N must be a positive integer.")
+        return
+
+    first = 0
+    second = 1
+
+    print("Fibonacci sequence:", end=" ")
+
+    for i in range(n):
+        print(first, end=" ")
+        next_num = first + second
+        first = second
+        second = next_num
+    print()
+
+
+# Part B - Check if a number is a Fibonacci number
+def check_fibonacci(number):
+    if number < 0:
+        print(number, "is NOT a Fibonacci number.")
+        return
+
+    first = 0
+    second = 1
+
+    while first < number:
+        next_num = first + second
+        first = second
+        second = next_num
+
+    if first == number:
+        print(number, "is a Fibonacci number.")
+    else:
+        print(number, "is NOT a Fibonacci number.")
+
+
+# Main function
+def main():
+    n = int(input("How many terms? "))
+    print_fibonacci(n)
+
+    number = int(input("Enter a number to check: "))
+    check_fibonacci(number)
+
+
+# Run the program
+main()
